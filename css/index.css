@@ -62,8 +62,6 @@ main {
     flex: 1;
 }
 
-/* Optional: Style the footer */
-
 #under-construction{
     display: flex;
     flex-direction: column;
