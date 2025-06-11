@@ -1,2 +1,2 @@
-# Wei Xing portfolio
-website link https://yap-wei-xing.github.io/wei_xing.github.io
+# Wei Xing Portfolio
+website link: https://yap-wei-xing.github.io/wei_xing.github.io
