@@ -1,7 +1,7 @@
 <h1>Hi, I'm Wei Xing!<br/>
   <a href="https://github.com/yap-wei-xing">Cybersecurity Learner</a>, 
   <a href="https://www.linkedin.com/in/yapweixing/">Linkedin</a>, 
-  <a href="https://yap-wei-xing.github/">Portfolio</a>
+  <a href="https://github.com/yap-wei-xing/wei_xing.github.io">Portfolio</a>
 </h1>
 
 <!--
