@@ -1,3 +1,9 @@
+/* General: Scroll padding for anchor links */
+html {
+  scroll-padding-top: 4rem; /* Adjust to your header height */
+}
+
+/* Dark Mode Base Styles */
 body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
@@ -7,21 +13,24 @@ body.dark-mode a {
   color: #6575ff;
 }
 
-body.dark-mode .card {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border-color: #333;
-}
-
+/* Hero section, About, Blog, Contact use .bg-light */
 body.dark-mode .bg-light {
   background-color: #1e1e1e !important;
 }
 
-.logo {
-  color: #000000;
+/* Header */
+body.dark-mode .bg-white {
+  background-color: #000000 !important;
+  color: #f0f0f0 !important;
 }
 
-footer {
-  background-color: #f0f0f0;
-  color: #000000;
+body.dark-mode .logo {
+  color: #f0f0f0;
+}
+
+/* Cards (Project section) */
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #333;
 }
