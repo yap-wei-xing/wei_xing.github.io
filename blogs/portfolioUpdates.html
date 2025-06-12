@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Updates</title>
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="icon" href="../static/favicon.ico" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <header class="bg-white shadow-sm sticky-top">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+      <div class="logo fw-bold fs-4">WX.</div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="../data/resume.pdf" target="_blank">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+          <li class="nav-item"><button class="btn btn-sm btn-outline-secondary theme-toggle">🌓</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <h1 class="mb-4">Portfolio Updates</h1>
+        <p>Stay tuned for the latest updates on my portfolio!</p>
+        <div class="d-flex flex-column gap-4">
+            <!-- blog 1 -->
+          <div class="card h-100 w-100">
+            <div class="card-body">
+              <h5 class="card-title">General Update #1: Welcome</h5>
+              <p class="card-text">Welcome to my Portfolio! 13/06/2025</p>
+              <div id="fullBlog1" style="display: none; margin-top: 1rem;">
+                <h2 style="font-size: 1.25rem;">Hello</h2>
+                <p>
+                  Welcome! This is our first time meeting, nice to meet you! I'm Wei Xing, an aspiring cybersecurity professional. This portfolio will be used to showcase what I’ve built and what I’m learning. I hope you find it informative and inspiring. Feel free to explore my projects and reach out if you have any questions or just want to connect!
+                </p>
+                <h2 style="font-size: 1.25rem;">The History</h2>
+                <p>
+                  I had been thinking about creating this portfolio for a while now, but I kept putting it off because I knew it would be a tedious process. Now that I’ve actually started building it, I can confirm it is pretty tedious... Personally, general development isn’t really my thing; I’m not a big fan of coding. I usually prefer providing technical support or using my technical knowledge to help others, just like a support engineer would, rather than building things from scratch.
+                </p>
+                <p>
+                  But after spending some time on YouTube, one day I decided to start building it at 4 a.m. I don't know what brought me to that decision, but here I am now. After a lot of iteration and a lot of help from ChatGPT and Copilot, I've built what I have now: a somewhat workable and nice-looking portfolio. It's pretty cool, I guess. Hopefully, I'll have the time to maintain this site, adding improvements here and there.
+                </p>
+                <p>
+                  Anyway, I'll end my first blog here for now. I hope you enjoyed reading it! If you have any questions or feedback, feel free to reach out to me through the contact page. Thanks for visiting my portfolio!
+                </p>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline-primary mt-2" id="readMoreBtn1" aria-expanded="false">Read More</a>
+            </div>
+          </div>
+          <!-- blog 1 end -->
+           
+            <!-- blog 2 -->
+          <div class="card h-100 w-100">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Update #1: Blog added to Portfolio</h5>
+              <p class="card-text">I have added a blogging section to my portfolio. 12/6/2025</p>
+              <div id="fullBlog2" style="display: none; margin-top: 1rem;">
+                <p>
+                  Hi there, welcome back. I'm excited to announce that I have added a blogging section to my portfolio. This blogging section will be used to document my journeys throughout cybersecurity or in general. I hope to use this space to share my thoughts, experiences, and insights as I continue my journey in cybersecurity or anything tech related. Stay tune for upcoming post and updates!
+                  <br/><br/>
+                  Thank you for reading. Hope you are as excited as I am to see what I have in store in the future!
+                </p>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline-primary mt-2" id="readMoreBtn2">Read More</a>
+            </div>
+          </div>
+          <!-- blog 2 end -->
+          
+          <!--Upcoming blog 3
+          <div class="card h-100 w-100">
+            <div class="card-body">
+              <h5 class="card-title">Placeholder Blog</h5>
+              <p class="card-text">Placeholder for my next blog. More coming soon!</p>
+              <div id="fullBlog3" style="display: none; margin-top: 1rem;">
+                <p>
+                  This is a placeholder for my next blog post. Here, I'll be sharing more about my projects, experiences, and insights in the field of cybersecurity. Stay tuned for more updates!
+                </p>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline-primary mt-2" id="readMoreBtn3">Read More</a>
+            </div>
+          </div>
+           blog 3 end -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-3 bg-white shadow-sm mt-auto">
+    <small>&copy; 2025 Wei Xing</small>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    const body = document.body;
+    const darkMode = localStorage.getItem('dark-mode');
+
+    if (darkMode === 'enabled') {
+      body.classList.add('dark-mode');
+    }
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        localStorage.setItem('dark-mode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
+      });
+    }
+
+    // Blog expand/collapse (loop version)
+    for (let i = 1; i <= 2; i++) {
+      const btn = document.getElementById(`readMoreBtn${i}`);
+      const content = document.getElementById(`fullBlog${i}`);
+      if (btn && content) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isExpanded = content.style.display === 'block';
+          content.style.display = isExpanded ? 'none' : 'block';
+          btn.textContent = isExpanded ? 'Read More' : 'Read Less';
+          btn.setAttribute('aria-expanded', !isExpanded);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
