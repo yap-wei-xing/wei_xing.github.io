@@ -172,3 +172,22 @@ body.dark-mode .profile-card .badge {
   background-color: rgba(255,255,255,0.1) !important; /* Semi-transparent background */
   border-color: #444 !important;        /* Darker border */
 }
+/* --- Navbar Mobile & Dark Mode Fixes --- */
+
+/* 1. Fix the Hamburger Icon in Dark Mode (Invert color to white) */
+body.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* 2. Fix Nav Links in Dark Mode */
+body.dark-mode .navbar-nav .nav-link {
+  color: #e0e0e0; /* Light gray text */
+}
+body.dark-mode .navbar-nav .nav-link:hover {
+  color: #6575ff; /* Blue on hover */
+}
+
+/* 3. Ensure the Mobile Menu Background matches Dark Mode */
+body.dark-mode .navbar-collapse {
+  background-color: #000000; /* Matches your header bg */
+}
