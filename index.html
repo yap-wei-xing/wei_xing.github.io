@@ -4,9 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wei Xing | Portfolio</title>
+  <meta name="description" content="Portfolio of Wei Xing, a Cybersecurity student specializing in binary exploitation, reverse engineering, and IT operations.">
   <link rel="stylesheet" href="css/static.css" />
   <link rel="icon" href="static/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  
 </head>
 <body>
   <header class="bg-white shadow-sm sticky-top">
@@ -16,7 +18,7 @@
         <ul class="nav">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="data/resume/resume(1).pdf" target="_blank">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="data/resume/resume.pdf" target="_blank">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="html/recommendation.html">LOR</a></li>
           <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -32,43 +34,186 @@
       <div class="container">
       <h1 class="display-5 fw-bold">Hi, I'm Wei Xing</h1>
       <p class="lead">Aspiring cyber security professional, tech enthusiast, and gadget collector.</p>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="data/resume/resume(1).pdf" target="_blank" class="btn btn-outline-primary">View Resume</a>
-        <a href="html/recommendation.html" class="btn btn-outline-primary">View LOR</a>
-      </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
       <div class="container">
-        <h2 class="mb-4">About Me</h2>
-        <p>
-          I'm currently studying a degree in cybersecurity. I enjoy solving problems and learning new technologies. This portfolio is a space to showcase what I’ve built and what I’m learning.
-        </p>
+        <div class="row align-items-stretch g-4"> <!-- changed: align-items-stretch so columns match height -->
+
+          <!-- Left: Avatar & quick actions -->
+          <div class="col-md-4 text-center">
+            <div class="profile-card p-4 rounded shadow-sm h-100 d-flex flex-column align-items-center">
+              
+              <img src="static/avatar.jpg" alt="Wei Xing" class="rounded mb-3 avatar-img shadow-sm" />
+              
+              <h3 class="fw-bold mb-1">Wei Xing</h3>
+              <p class="text-muted mb-3">Cybersecurity Student<br><span class="small"></span></p>
+              
+              <div class="d-flex justify-content-center gap-2 mb-3 w-100">
+                <a href="data/resume/resume.pdf" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1">
+                  <i class="bi bi-file-earmark-person me-1"></i> Resume
+                </a>
+                <a href="mailto:ywx2004@gmail.com" class="btn btn-sm btn-outline-primary flex-grow-1">
+                  <i class="bi bi-envelope me-1"></i> Email
+                </a>
+              </div>
+
+              <hr class="w-100 my-4 opacity-25">
+
+              <div class="w-100 text-start px-2">
+                
+                <h6 class="fw-bold text-uppercase small text-muted mb-2">Languages</h6>
+                <div class="mb-4">
+                  <span class="badge bg-light text-dark border me-1">English</span>
+                </div>
+
+                <h6 class="fw-bold text-uppercase small text-muted mb-2">Certifications</h6>
+                <ul class="list-unstyled small text-muted mb-0">
+                  <li class="mb-3 d-flex align-items-start">
+                    <i class="bi bi-award text-primary me-2"></i>
+                    <span>Certified APU Cloud Solution Architect</span>
+                  </li>
+                  <li class="mb-2 d-flex align-items-start">
+                    <i class="bi bi-router text-primary me-2"></i>
+                    <span>CCNA: Introduction to Networking</span>
+                  </li>
+                </ul>
+                
+              </div>
+              
+              <div class="social-links d-flex gap-3 mt-2">
+                <a href="https://github.com/yap-wei-xing" target="_blank" aria-label="GitHub" class="text-reset fs-4 hover-primary">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yapweixing" target="_blank" aria-label="LinkedIn" class="text-reset fs-4 hover-primary">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Bio, highlights, skills (wrapped in bio-card to match heights) -->
+          <div class="col-md-8">
+            <div class="bio-card p-4 rounded shadow-sm h-100">
+              <div class="bio-content">
+                <h2 class="mb-3">About Me</h2>
+                <p class="lead mb-3">
+                  I am a Cybersecurity student at APU with a background in Software Engineering. 
+                  Unlike the typical "coder," my passion lies in <strong>IT operations, system hardening, and threat defense</strong>.
+                </p>
+                <p class="text-muted mb-4">
+                  My journey started in software development, but I quickly realized I enjoyed breaking and securing systems more than building them. 
+                  With over a year of experience as a Technical Assistant managing 700+ workstations and a background as a System Engineer Intern, 
+                  I bridge the gap between technical troubleshooting and enterprise security. Currently, I am building my home lab to simulate 
+                  network attacks and sharpen my skills in Blue Team operations.
+                </p>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-sm-6">
+                    <h6 class="fw-bold text-uppercase small mb-2 text-primary">Profile</h6>
+                    <ul class="list-unstyled mb-0 text-muted">
+                      <li class="mb-1"><i class="bi bi-geo-alt me-2"></i>Selangor, Malaysia</li>
+                      <li class="mb-1"><i class="bi bi-person-badge me-2"></i>Aspiring Information Security Officer</li>
+                      <li class="mb-1"><i class="bi bi-check-circle me-2"></i>Open to Internships or Part-time work</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <h6 class="fw-bold text-uppercase small mb-2 text-primary">Interests</h6>
+                    <ul class="list-unstyled mb-0 text-muted">
+                      <li class="mb-1">🛡️ Network Defense (Blue Team)</li>
+                      <li class="mb-1">🕷️ Threat Hunting & IR</li>
+                      <li class="mb-1">💻 Home Lab Virtualization</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h5 class="mt-3">Tech Stack</h5>
+                <div class="mb-4 skill-badges">
+                  <span class="badge bg-light text-dark me-1 mb-1">Linux (Red Hat/Rocky)</span>
+                  <span class="badge bg-light text-dark me-1 mb-1">Cisco Packet Tracer</span>
+                  <span class="badge bg-light text-dark me-1 mb-1">VirtualBox / VM</span>
+                  <span class="badge bg-light text-dark me-1 mb-1">System Administration</span>
+                  <span class="badge bg-light text-dark me-1 mb-1">Python Scripting</span>
+                  <span class="badge bg-light text-dark me-1 mb-1">Computer Forensics</span>
+                  <span class="badge bg-light text-dark me-1 mb-1">System Hardening</span>
+                </div>
+
+                <h5 class="mt-4">Journey</h5>
+                <ul class="timeline">
+                  <li>
+                    <strong>2026 (Expected):</strong> BSc (Hons) in Computer Science (Cyber Security)
+                    <p class="small text-muted mb-0">Asia Pacific University (APU)</p>
+                  </li>
+                  <li>
+                    <strong>2025 (Upcoming):</strong> Internship
+                    <p class="small text-muted mb-0">LBS Bina Holdings Sdn Bhd (4 Months)</p>
+                  </li>
+                  <li>
+                    <strong>2023 – 2025:</strong> Technical Assistant 
+                    <p class="small text-muted mb-0">Asia Pacific University (APU)</p>
+                  </li>
+                  <li>
+                    <strong>2024:</strong> Diploma in ICT (Software Engineering)
+                    <p class="small text-muted mb-0">Asia Pacific University (APU)</p>
+                  </li>
+                  <li>
+                    <strong>2021 – 2022:</strong> System Engineer Intern
+                    <p class="small text-muted mb-0">Elyss Horizon Sdn Bhd</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bio-footer mt-3"> <!-- pinned CTA area -->
+                <p class="mt-0 mb-0">
+                  Want to collaborate or mentor? <a href="mailto:ywx2004@gmail.com">Email me</a> or check my GitHub for projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">Projects</h2>
+        <h2 class="mb-4">Projects & Experience</h2>
         <div class="row g-4">
           <div class="col-md-6">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">Portfolio</h5>
-                <p class="card-text">This portfolio is hosted on GitHub and gives a glimpse of who I am and what I do.</p>
-                <a href="https://github.com/yap-wei-xing/wei_xing.github.io/" target="_blank" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <h5 class="card-title">Portfolio Website</h5>
+                <p class="card-text">
+                  A responsive personal portfolio hosted on GitHub Pages, built to showcase my cybersecurity journey and technical projects.
+                </p>
+                <a href="https://github.com/yap-wei-xing/wei_xing.github.io/" target="_blank" class="btn btn-sm btn-outline-primary">View Source</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Enterprise Lab Optimization (APU)</h5>
+                <p class="card-text">
+                  Managed inventory and software for over 700 workstations across 34 labs. Successfully improved support response times by 20% and streamlined maintenance processes.
+                </p>
+                <a href="data/resume/resume.pdf" target="_blank" class="btn btn-sm btn-outline-primary">View Details in Resume</a>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">Next Project</h5>
-                <p class="card-text">Placeholder for my next project. More coming soon!</p>
-                <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
+                <h5 class="card-title">Phishing Attack Simulation</h5>
+                <p class="card-text">
+                  Develop a way to spread the awareness of phishing attacks by simulating real-world phishing scenarios to educate users on identifying and avoiding such threats.
+                </p>
+                <a href="https://github.com/yap-wei-xing/Phishing-Attack-Simulation" target="_blank" class="btn btn-sm btn-outline-primary">View Source</a>
               </div>
             </div>
           </div>
@@ -132,21 +277,6 @@
     <small>&copy; 2025 Wei Xing</small>
   </footer>
 
-  <script>
-  const toggle = document.querySelector('.theme-toggle');
-  const body = document.body;
-  const darkMode = localStorage.getItem('dark-mode');
-
-  if (darkMode === 'enabled') {
-    body.classList.add('dark-mode');
-      toggle.classList.add('rotated');
-  }
-
-  toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    localStorage.setItem('dark-mode', body.classList.contains('dark-mode') ? 'enabled' : 'disabled');
-    toggle.classList.toggle('rotated');
-  });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
