@@ -177,3 +177,54 @@ body.dark-mode .navbar-nav .nav-link:hover {
 body.dark-mode .navbar-collapse {
   background-color: #000000; /* Matches your header bg */
 }
+/* --- New Animations --- */
+
+/* 1. Typewriter Effect (Cybersecurity Style) */
+.typewriter h1 {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #0d6efd; /* The cursor color */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+  max-width: 100%; /* Ensure it doesn't break layout */
+}
+
+/* The typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The cursor blinking animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #0d6efd; }
+}
+
+/* 2. Hover Lift Effect for Cards */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-8px); /* Moves up */
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.15) !important; /* Stronger shadow */
+}
+/* --- Timeline Animation Styles --- */
+
+/* 1. Initial State (Hidden) */
+.timeline li {
+  opacity: 0;
+  transform: translateY(20px); /* Shifted down slightly */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* 2. Visible State (Revealed) */
+/* JavaScript will add this class when you scroll down */
+.timeline li.visible {
+  opacity: 1;
+  transform: translateY(0); /* Returns to original position */
+}
